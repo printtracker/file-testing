@@ -9,3 +9,4 @@ postsubmits:
           - image: alpine
             command:
               - cat file.txt
+              - ls
