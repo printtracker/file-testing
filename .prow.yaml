@@ -5,6 +5,6 @@ postsubmits:
     max_concurrency: 1
     spec:
       containers:
-        - image: busybox
+        - image: alpine
           command:
-            - cat file.txt
+            - ls
