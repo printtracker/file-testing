@@ -1,0 +1,11 @@
+postsubmits:
+  printtracker/file-testing:
+    - name: cat-file
+      decorate: true
+      always_run: true
+      max_concurrency: 1
+      spec:
+        containers:
+          - image: alpine
+            command:
+              - cat file.txt
